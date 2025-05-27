@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour MAMA | Explore Asia's Wonders</title>
   
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Animation Libraries -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   
   <!-- CSS Files -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
       <div class="floating-element"></div>
     </div>
     
-    <div id="banner" class="animate__animated animate__fadeIn">
+    <div id="banner">
       <div class="banner-content" data-aos="fade-right" data-aos-duration="1000">
         <h1>From SouthEast Asia <span>to Bangladesh</span></h1>
         <p>
@@ -46,7 +46,7 @@
       </div>
       
       <div class="banner-image" data-aos="fade-left" data-aos-duration="1000">
-        <img src="images/hero.png" alt="Travel Adventure" />
+        <img src="images/hero.png" alt="Travel Adventure">
       </div>
     </div>
   </section>
@@ -63,7 +63,7 @@
       <div id="service-card-container">
         <!-- Card 1 -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <img src="images/bag.png" alt="All You Need" />
+          <img src="images/bag.png" alt="All You Need">
           <h2>Complete Packages</h2>
           <p>
             From flights and accommodations to guided tours, we've got all your travel needs covered in one place.
@@ -72,7 +72,7 @@
         
         <!-- Card 2 -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <img src="images/books.png" alt="Expert Guides" />
+          <img src="images/books.png" alt="Expert Guides">
           <h2>Expert Guides</h2>
           <p>
             Our knowledgeable local guides will show you hidden gems and share fascinating stories about each destination.
@@ -81,7 +81,7 @@
         
         <!-- Card 3 -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <img src="images/card.png" alt="Easy Booking" />
+          <img src="images/card.png" alt="Easy Booking">
           <h2>Easy Booking</h2>
           <p>
             Our seamless booking process and secure payment options make planning your dream vacation effortless.
@@ -103,11 +103,11 @@
       <div id="story-card-container" data-aos="fade-up" data-aos-duration="1000">
         <div class="story-card">
           <div class="story-image">
-            <img src="images/chaina-wall.png" alt="Great Wall of China" />
+            <img src="images/chaina-wall.png" alt="Great Wall of China">
           </div>
           <div class="story-content">
             <h2>Great Wall of China</h2>
-            <img src="images/chaina.png" alt="China Flag" />
+            <img src="images/chaina.png" alt="China Flag">
             <p>
               The Great Wall of China is one of the most impressive architectural feats in history, stretching over 13,000 miles. Built over centuries to protect Chinese states from invasions, it offers breathtaking views and a tangible connection to China's rich history.
             </p>
@@ -130,21 +130,21 @@
       <div id="country-card-container">
         <!-- Bangladesh -->
         <div class="country-card" data-aos="fade-up" data-aos-delay="100">
-          <img src="images/bangladesh.png" alt="Bangladesh" />
+          <img src="images/bangladesh.png" alt="Bangladesh">
           <h2>Bangladesh</h2>
           <p>Land of Rivers</p>
         </div>
         
         <!-- China -->
         <div class="country-card" data-aos="fade-up" data-aos-delay="200">
-          <img src="images/chaina-wall.png" alt="China" />
+          <img src="images/chaina-wall.png" alt="China">
           <h2>China</h2>
           <p>Ancient Civilization</p>
         </div>
         
         <!-- Thailand -->
         <div class="country-card" data-aos="fade-up" data-aos-delay="300">
-          <img src="images/coxs-bazar.png" alt="Thailand" />
+          <img src="images/coxs-bazar.png" alt="Thailand">
           <h2>Thailand</h2>
           <p>Land of Smiles</p>
         </div>
@@ -155,5 +155,14 @@
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    // Initialize AOS after page load
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    });
+  </script>
 </body>
 </html>
