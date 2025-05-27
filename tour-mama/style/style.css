@@ -275,3 +275,58 @@ header {
     font-size: 18px;
     margin-bottom: 30px;
 }
+/* Destinations */
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: var(--secondary);
+    bottom: -10px;
+    left: 0;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.destination-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 20px;
+}
+
+.destination-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.destination-info p {
+    color: #6B7280;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 20px;
+}
