@@ -389,3 +389,19 @@ header {
     color: var(--secondary);
     margin-top: 5px;
 }
+/* Newsletter */
+.newsletter {
+    background: linear-gradient(135deg, var(--primary), #7C3AED);
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.newsletter input {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 10px;
+}
