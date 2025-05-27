@@ -5,34 +5,47 @@ AOS.init({
 });
 
 // Custom Cursor
-const cursor = document.querySelector('.cursor');
-const cursorFollower = document.querySelector('.cursor-follower');
+const letters = [
+  document.getElementById("a"),
+  document.getElementById("b"),
+  document.getElementById("i"),
+  document.getElementById("r")
+];
 
-document.addEventListener('mousemove', (e) => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
-  
-  // Add slight delay to follower for smooth effect
-  setTimeout(() => {
-    cursorFollower.style.left = e.clientX + 'px';
-    cursorFollower.style.top = e.clientY + 'px';
-  }, 100);
+const positions = Array(letters.length).fill().map(() => ({ x: window.innerWidth / 2, y: window.innerHeight / 2 }));
+const mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+
+document.addEventListener("mousemove", e => {
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
 });
 
-// Change cursor style on hover interactive elements
-const interactiveElements = document.querySelectorAll('button, a, .service-card, .country-card, .story-card');
+function animate() {
+  // Lead cursor
+  positions[0].x += (mouse.x - positions[0].x) * 0.2;
+  positions[0].y += (mouse.y - positions[0].y) * 0.2;
 
-interactiveElements.forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursor.style.transform = 'scale(2)';
-    cursorFollower.style.transform = 'scale(0.5)';
+  // Followers
+  for (let i = 1; i < positions.length; i++) {
+    positions[i].x += (positions[i - 1].x - positions[i].x) * 0.02;
+    positions[i].y += (positions[i - 1].y - positions[i].y) * 0.02;
+  }
+
+  // Update styles
+  letters.forEach((el, i) => {
+    el.style.transform = `translate(${positions[i].x}px, ${positions[i].y}px)`;
   });
-  
-  el.addEventListener('mouseleave', () => {
-    cursor.style.transform = 'scale(1)';
-    cursorFollower.style.transform = 'scale(1)';
-  });
-});
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+
+
+
+
 
 // Floating Animation
 document.addEventListener('DOMContentLoaded', () => {
