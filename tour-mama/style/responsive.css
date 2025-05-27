@@ -11,4 +11,18 @@
     .text-center-mobile {
         text-align: center;
     }
+        /* Mobile Menu Button */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    /* Navigation */
+    .hidden-mobile {
+        display: none;
+    }
+    
+    /* Hero Section */
+    .hero h1 {
+        font-size: 36px;
+    }
     
