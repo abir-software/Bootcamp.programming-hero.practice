@@ -40,7 +40,7 @@
         font-weight: 600;
         pointer-events: none;
         opacity: 0.9;
-        transition: transform 0.1s ease;
+        transition: transform 0.0s ease;
 
         /* Make sure it's on top of everything */
         z-index: 999999;
