@@ -25,4 +25,60 @@
     .hero h1 {
         font-size: 36px;
     }
+        /* Destination Cards */
+    .destination-card {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
     
+    /* Service Cards */
+    .service-card {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    /* Testimonial Cards */
+    .testimonial-card {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    /* Contact Section */
+    .w-1\/2 {
+        width: 100% !important;
+    }
+    
+    /* Footer Links */
+    .footer-links {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero .flex {
+        flex-direction: column;
+    }
+    
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+    }
+    
+    /* Newsletter Form */
+    .newsletter form {
+        flex-direction: column;
+    }
+    
+    .newsletter input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+}
