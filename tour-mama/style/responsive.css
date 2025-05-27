@@ -1,84 +1,86 @@
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .flex-col-mobile {
-        flex-direction: column;
-    }
-    
-    .w-full-mobile {
-        width: 100%;
-    }
-    
-    .text-center-mobile {
-        text-align: center;
-    }
-        /* Mobile Menu Button */
-    .mobile-menu-btn {
-        display: block;
-    }
-    
-    /* Navigation */
-    .hidden-mobile {
-        display: none;
-    }
-    
-    /* Hero Section */
-    .hero h1 {
-        font-size: 36px;
-    }
-        /* Destination Cards */
-    .destination-card {
-        width: 100% !important;
-        margin-bottom: 20px;
-    }
-    
-    /* Service Cards */
-    .service-card {
-        width: 100% !important;
-        margin-bottom: 20px;
-    }
-    
-    /* Testimonial Cards */
-    .testimonial-card {
-        width: 100% !important;
-        margin-bottom: 20px;
-    }
-    
-    /* Contact Section */
-    .w-1\/2 {
-        width: 100% !important;
-    }
-    
-    /* Footer Links */
-    .footer-links {
-        width: 100% !important;
-        margin-bottom: 30px;
-    }
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .banner-content h1 {
+    font-size: 48px;
+  }
+  
+  .service-card {
+    width: 300px;
+    padding: 50px 30px;
+  }
 }
 
-@media (max-width: 480px) {
-    /* Hero Section */
-    .hero h1 {
-        font-size: 28px;
-    }
-    
-    .hero .flex {
-        flex-direction: column;
-    }
-    
-    .hero .btn {
-        width: 100%;
-        margin-bottom: 10px;
-        margin-right: 0 !important;
-    }
-    
-    /* Newsletter Form */
-    .newsletter form {
-        flex-direction: column;
-    }
-    
-    .newsletter input {
-        margin-right: 0;
-        margin-bottom: 10px;
-        max-width: 100%;
-    }
+@media screen and (max-width: 992px) {
+  #banner {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .banner-content, .banner-image {
+    width: 100%;
+  }
+  
+  .banner-content {
+    margin-top: 40px;
+  }
+  
+  .button-box {
+    justify-content: center;
+  }
+  
+  .story-card {
+    flex-direction: column;
+  }
+  
+  .story-image, .story-content {
+    width: 100%;
+  }
+  
+  .story-image {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-content h2 {
+    font-size: 36px;
+  }
+  
+  .banner-content h1 {
+    font-size: 36px;
+  }
+  
+  .button-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .btn, .btn-white {
+    margin-right: 0;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .story-content {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading-content h2 {
+    font-size: 28px;
+  }
+  
+  .heading-content h4 {
+    font-size: 16px;
+  }
+  
+  .service-card {
+    width: 100%;
+  }
+  
+  .country-card {
+    width: 100%;
+  }
 }
