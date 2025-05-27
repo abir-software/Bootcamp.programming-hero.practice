@@ -19,6 +19,7 @@
   <!-- CSS Files -->
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/responsive.css">
+  
 </head>
 
 <body>
@@ -29,8 +30,35 @@
     <div class="cursor-letter" id="i">I</div>
     <div class="cursor-letter" id="r">R</div>
 
+    <!-- Social Media Sidebar (Visible on desktop) -->
+    <div class="social-sidebar">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://linkedin.com/in/abirhassan2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
 
-  <nav></nav>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h2>Tour MAMA</h2>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="#service-container">Services</a></li>
+            <li><a href="#story-container">Best Spots</a></li>
+            <li><a href="#country-container">Countries</a></li>
+            <li><a href="#portfolio">Our Portfolio</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
   <!-- Banner Section -->
   <section id="banner-container">
     <div class="floating-elements">
@@ -157,7 +185,57 @@
     </div>
   </section>
 
-  <!-- Scripts -->
+  <!-- Portfolio Section (Placeholder) -->
+  <section id="portfolio" style="padding: 100px 0; background: #f9f9f9;">
+    <div style="width: 90%; max-width: 1400px; margin: 0 auto;">
+      <div class="heading-content" data-aos="fade-up" data-aos-duration="800">
+        <h4>OUR WORK</h4>
+        <h2>Our Portfolio</h2>
+        <p>Explore our collection of successful tours and happy travelers</p>
+      </div>
+      <!-- Portfolio content would go here -->
+    </div>
+  </section>
+
+  <!-- Reviews Section (Placeholder) -->
+  <section id="reviews" style="padding: 100px 0; background: #fff;">
+    <div style="width: 90%; max-width: 1400px; margin: 0 auto;">
+      <div class="heading-content" data-aos="fade-up" data-aos-duration="800">
+        <h4>TESTIMONIALS</h4>
+        <h2>Reviews by Tourists</h2>
+        <p>What our customers say about their experiences</p>
+      </div>
+      <!-- Reviews content would go here -->
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Tour MAMA</h2>
+          <p>Exploring Asia's wonders one journey at a time</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com/aabirhassan2/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://linkedin.com/in/abirhassan2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/abir-software" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Tour MAMA. All Rights Reserved.</p>
+        <p>Collaborate By <a href="https://www.linkedin.com/in/abirhassan2/" target="_blank">Md Abir Hassan</a> & Programming Hero</p>
+      </div>
+    </div>
+  </footer>
+ <!-- Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/script.js"></script>
   <script>
@@ -169,5 +247,6 @@
       });
     });
   </script>
+  
 </body>
 </html>
