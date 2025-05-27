@@ -23,7 +23,6 @@
         cursor:none;
          /* Hide default cursor */
       }
-      
       /* Custom Cursor */
         .cursor-letter {
         position: fixed; /* use fixed instead of absolute */
